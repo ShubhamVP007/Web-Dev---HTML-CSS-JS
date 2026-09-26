@@ -66,7 +66,7 @@
 }
 
 #Calculate:active {
-  transform: translateY(0);
+  transform: translateY(-1px);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -93,8 +93,8 @@
             physics = Number(physics);
             
                         const name = document.getElementById("Name").value;
-                        let result = document.getElementById("Result");
                         
+                        let result = document.getElementById("Result");
                         if(c < 0 || c > 100 || maths < 0 || maths > 100 || physics < 0 || physics > 100) {
                             result.innerHTML="Invalid Input";
                         }
@@ -118,7 +118,7 @@
                                 grade="F-Grade";
                             }
                             result.innerHTML = `Name: ${name}<br>Total: ${total}<br>Percentage: ${percentage.toFixed(2)}%<br>Grade: ${grade}`;
-                            }
+                        }
         });
         </script>
         
